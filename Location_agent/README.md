@@ -1,6 +1,5 @@
-# UrbanSense AI Locality Simulator POC
-
-A small proof of concept for testing whether a new product or store concept is likely to work in a local Singapore catchment area.
+# UrbanSense AI Locality Simulator
+ new product or store concept is likely to work in a local Singapore catchment area.
 
 The POC keeps geography deterministic and structured, then uses persona-style reasoning to explain who would buy, why, and when. CrewAI is wired as an optional analysis layer, with a local fallback so the app can run without installing anything.
 
