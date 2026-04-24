@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shell Select Locality Simulator</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="app">
+      <section class="workspace">
+        <div class="map-panel">
+          <div class="map-toolbar">
+            <div>
+              <p class="eyebrow">Singapore Locality POC</p>
+              <h1>Shell Select Product Simulator</h1>
+            </div>
+            <button id="simulateBtn">Simulate Day</button>
+          </div>
+          <div id="map" class="map" aria-label="Locality map"></div>
+          <div id="timeline" class="timeline"></div>
+        </div>
+
+        <aside class="control-panel">
+          <label>
+            Product name
+            <input id="productName" value="Paracetamol 500mg">
+          </label>
+          <label>
+            Category
+            <select id="category">
+              <option value="medicine">medicine</option>
+              <option value="snacks">snacks</option>
+              <option value="grocery">grocery</option>
+              <option value="health">health</option>
+              <option value="food">food</option>
+            </select>
+          </label>
+          <label>
+            Price SGD
+            <input id="price" type="number" min="0" step="0.10" value="4.90">
+          </label>
+          <label>
+            Product notes
+            <textarea id="notes">OTC pain and fever relief in a 20-tablet pack</textarea>
+          </label>
+          <div id="summary" class="summary">
+            <p>Run the simulation to see buyer personas, route-grounded quotes, and a stocking recommendation.</p>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
+

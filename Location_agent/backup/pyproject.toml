@@ -1,0 +1,14 @@
+[project]
+name = "shell-select-locality-simulator"
+version = "0.1.0"
+description = "POC web app for Shell Select locality-based multi-agent product simulation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+crewai = [
+  "crewai>=0.175.0",
+  "openai>=1.13.3"
+]
+
